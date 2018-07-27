@@ -1,0 +1,86 @@
+@import "fonts", "colors";
+
+body {
+  background-color: $backgroundColor;
+  font-family: $font;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  color: $fontColor;
+}
+
+#title {
+  h1 {
+    font-size: 65px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+.control-btn {
+  color: $controlBtnColor;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  color: $controlBtnColorOnHover;
+}
+.control-btn:focus {
+  outline: none;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .label {
+    margin-bottom: 20px;
+    
+    .label-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .label-title {
+      font-size: 36px;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+
+    .time-length {
+      font-size: 36px;
+      font-weight: lighter;
+    }
+  }
+}
+
+#session-timer {
+  #timer-label {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  #time-left {
+    font-size: 80px;
+    font-family: $timerFont;
+    font-weight: bold;
+  }
+}
+
+#controllers {
+  display: flex;
+  justify-content: center;
+}

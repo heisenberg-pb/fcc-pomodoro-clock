@@ -175,7 +175,7 @@ class App extends React.Component {
       this.setState({
         sessionLength: newLength.toString(),
         timeLeft: {
-          minute: newLength.toString(),
+          minute: this.getFormatted(newLength),
           second: '00'
         }
       });

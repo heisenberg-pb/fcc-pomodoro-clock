@@ -13,4 +13,4 @@ npm run build
 ```
 It will build ```bundle.js``` inside ```./dist/```
 
-[Codepen](https://codepen.io/heisenberg-pb/pen/NBaZGy) link of the project
+[Codepen](https://codepen.io/heisenberg-pb/full/NBaZGy) link of the project
